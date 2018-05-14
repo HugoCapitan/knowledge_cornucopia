@@ -175,7 +175,7 @@ kanban uses a presentation board divided into columns to visually manage the flo
 
 
 
-## Crystal methodologies
+## Crystal Methodologies
 
 Agile methodologies named after the colors of crystals of different hardness. These methodologies are people centric, adaptable and fit for your necessities.
 
@@ -185,7 +185,7 @@ Clear -> Yellow -> Orange -> Orange Web -> Red -> Maroon
 
 
 
-## Feature driven development
+## Feature Driven Development
 
 Client centric, Architecture centric. Clients are the project's stakeholders. All aspects of the software are planned, managed and tracked at the level of individual features.
 
@@ -207,7 +207,7 @@ System reqs are organized at three levels:
 
 
 
-## Dynamic system development method
+## Dynamic System Development Method
 
 > Business focused
 
@@ -240,6 +240,87 @@ It requires a large number of roles and artifacts however it has flexibility in 
 
 
 
-## Agile modeling
+## Agile Modeling
+
+> Chaordic!
+
+Agile modeling is an approach to developing software where extensive models are required before any development is done.
+
+The team develops a high level model of the project scope and then iterates over developments of more low leve models.
+
+- #### Iteration 0
+
+    - Initial requirements envisioning
+    - Initial architecture envisioning
+
+- #### Iterations 1 - n
+
+    - Iteration modeling
+    - Model storming
+    - Test driven development
 
 
+
+## Disciplined Agile Delivery
+
+This framework extends on other framework such as Scrum. A people-first, learning-oriented, hybrid agile model.
+
+DAD takes proven strategies from other frameworks and methodologies, it's flexible in the way that it only provides guidelines and advice about technical practices and other strategies.
+
+Keeps teams focused on a goal.
+
+#### Primary Roles
+
+These must exist on every DAD project.
+
+- Team Lead
+- Team member
+- Product owner
+- Architecture owner
+- Stakeholder
+
+##### Secondary roles
+
+- Independent tester
+- Specialist
+- Domain expert
+- Integrator
+- Technical expert
+
+#### 4 vesions of delivery lifecycle
+
+- Basic version, extends Scrum.
+- Advanced lean
+- Lean continuous delivery
+- Exploratory lean startup
+
+
+
+## Test Driven Development
+
+Writing tests before writing code
+
+1. Write test for the next bit of functionality to add.
+2. Write code till test passes.
+3. Refactor code to improve it.
+    - Remove bugs.
+    - Improve performance.
+    - Improve readability.
+
+
+
+## Behavior driven development
+
+An agile process for development software that incorporates concepts from test driven development. Is considered an evolution in the thinking of TDD.
+
+- Where to start testing?
+- What to test and what not to test?
+- How much to test?
+- Why a test should fail?
+- What to call the tests?
+
+BDD uses stories to express business value and desired behaviour. 
+
+> **As a** ....role.... **I want to** ....feature.... **So that** ....benefit.... 
+
+Tests of any unit of software should be specified of the desired behaviour of the unit and should look at the very specific business value.
