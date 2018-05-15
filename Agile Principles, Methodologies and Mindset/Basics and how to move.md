@@ -81,6 +81,8 @@ As well as the final product, teams improve with time. Evolving the interactions
 
 ## Chosing an agile model
 
+> Agile models can be implemented rigidly, with no deviations, or partially, suited to your needs, or a hybrid model, taking parts from different methodologies.
+
 | Agile Model | Suitability |
 | ----------- | ----------- |
 | XP | Informal methodology. Good for small dynamic projects with constant requirements change. |
@@ -88,5 +90,3 @@ As well as the final product, teams improve with time. Evolving the interactions
 | DSDM | Focused on business value but with complex processes and strict requirements for documentation |
 | Lean | Suitable for incorporation with other agile methodologies. Focus on minimizing waste to increase efficiency |
 | Crystal | Facilitates scaling of projects. Provides support for development of high criticality functions |
-
-Agile models can be implemented rigidly, with no deviations, or partially, suited to your needs, or a hybrid model, taking parts from different methodologies.
