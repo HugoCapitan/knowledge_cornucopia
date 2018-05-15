@@ -7,7 +7,6 @@ Agile follows and empirical / iterative process. Using experience from previous 
 - Focus on delivering the highest value items FIRST.
 - Issues are identified earlier.
 
-
 ## Agile Values
 
 | Primary                      |      | Secondary                   |
@@ -324,3 +323,42 @@ BDD uses stories to express business value and desired behaviour.
 > **As a** ....role.... **I want to** ....feature.... **So that** ....benefit.... 
 
 Tests of any unit of software should be specified of the desired behaviour of the unit and should look at the very specific business value.
+
+
+
+
+
+# Moving to agile.
+
+ - Awareness - of issues
+ - Desire - for change
+ - Ability - to change
+ - Promote - change
+ - Transfer - to agile
+
+## Key agile thinking tools
+
+- Top-down intent, bottom-up implementation
+
+    Managers manage from top, but teams are independent and can get to solutions by themselves
+
+- System thinking
+- Value streams
+- Pragmatism
+- Emphasis on the team
+- Work in progress limits
+
+## Chosing an agile model
+
+| Agile Model | Suitability |
+| ----------- | ----------- |
+| XP | Informal methodology. Good for small dynamic projects with constant requirements change. |
+| Scrum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Lightweight, focused on business value and value to the customer. Not strong in documentation nor on rigid processes |
+| DSDM | Focused on business value but with complex processes and strict requirements for documentation |
+| Lean | Suitable for incorporation with other agile methodologies. Focus on minimizing waste to increase efficiency |
+| Crystal | Facilitates scaling of projects. Provides support for development of high criticality functions |
+
+Agile models can be implemented rigidly, with no deviations, or partially, suited to your needs, or a hybrid model, taking parts from different methodologies.
+
+
+
