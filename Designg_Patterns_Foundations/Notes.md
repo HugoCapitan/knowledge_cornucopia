@@ -3,7 +3,7 @@
 ## *By using design patterns you are not reusing code, you are reusing **experience*** 
 
 # Design Principles. 
-## 1. *Encapsulate wath varies.*
+## 1. *Encapsulate what varies.*
 Begin by identifying the parts of the code that may need to change in the future.
 
 ## 2. *Program to an interface, not an implementation.*
