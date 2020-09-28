@@ -286,7 +286,8 @@ def busqueda_binaria(lista, comienzo, final , objetivo):
 ### Tradeoff espacio - tiempo
 Cuando queremos optimizar el tiempo, muchas veces podemos sacrificar espacio en memoria y viceversa. Es decir, no podemos tener lo mejor de los dos. Si queremos usar menos memoria, nos tomara mas tiempo y si queremos tomar menos tiempo usaremos mas memoria.
 
-## Ordenamiento de burbuja (Bubble sort)
+## Ordenamiento de burbuja (Bubble sort)
+
 El primer algoritmo de ordenamiento que veremos es el ordenamiento de burbuja. Es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si están en el orden incorrecto. Este procedimiento se repite hasta que no se requiere mas intercambios, lo que indica que la lista se encuentra ordenada.
 
 > Este algoritmo tiene una complejidad de O(n^2)
