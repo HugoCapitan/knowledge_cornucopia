@@ -106,7 +106,7 @@ class CasillaDeVotacion:
 - Permite compartir un comportamiento comun entre diferentes medios de la jerarquia
 - Padre: superclase Hijo: subclase
 
-### Sintaxis para herencia en python.
+### Sintaxis para herencia en python
 La palabra `super` nos permite obtener una referencia directa a la superclase.
 Siempre tenemos que inicializar explicitamente las superclase en el constructor de la subclase.
 
@@ -192,7 +192,7 @@ def f(x):
 
 Si sumamos todo al final obtenemos `1002 + x + x^2` lo cual es una buena aproximación, sin embargo cuando nos aproximamos a una x cerca del infinito, los términos que podrían parecer mas afectar a la velocidad de este algoritmo como el 1002, dejan de hacer sentido y nos distraen de lo que en realidad va a ser lo mas pesado como la x cuadrada
 
-### Ley de la suma.
+### Ley de la suma
 ``` py
 def f(n):
     for i in range(n):
@@ -213,7 +213,7 @@ def f(n):
 ```
 > O(n) + O(n * n) = O(n + n^2) = O(n^2)
 
-### Ley de la multiplicacion.
+### Ley de la multiplicacion
 Cuando hay iteraciones dentro de iteraciones, se multiplican
 ``` py
 def f(n):
@@ -238,7 +238,7 @@ Si tenemos una funcion recursiva que genera dos o mas llamadas recursivas entonc
 
 ![alt text](./Images/BigO_complexity_chart.jpeg "State Pattern's Class Diagram")
 
-# Algoritmos de búsqueda y ordenación.
+# Algoritmos de búsqueda y ordenación
 
 ## Búsqueda lineal
 Busca en todos los elementos de manera secuencial.
@@ -381,9 +381,80 @@ def merge_sort(list_a):
 ```
 
 # Graficado
+### Por qué graficar?
+- Visualizar grandes cantidades de datos de manera sencilla.
+- Fácil comparativa entre datos
+- Permite tener una primera imagen global, rápida.
+- Facilidad de modificación y filtros de los datos.
 
+## Graficado simple con bokeh
+- Bokeh permite exportar a varios formatos como html, notebooks, imagenes, etc.
+- Se puede usar en servidor con Flask O Django
+> [Bokeh Docs](https://docs.bokeh.org/en/latest/docs/gallery.html)
 
-# Ambientes Virtuales.
+Las funciones que estamos importando son:
+- `figure`: es la ventana en donde vamos a graficar
+- `output_file`: nos permite especificar en que archivo vamos a exportar la grafica
+- `show`: nos permite crear un servidor para visualizar nuestra gráfica
+
+```py
+from bokeh.plotting import figure, output_file, show
+
+if __name__ == '__main__':
+    output_file('graficado_simple.html')
+    fig = figure()
+
+    total_vals = int(input(f'Cuantos calores quieres graficar?'))
+    x_vals = list(range(total_vals))
+    y_vals = []
+
+    for x in x_vals:
+        val = int(input(f'Valor y para {x}'))
+        y_vals.append(val)
+
+    fig.line(x_vals, y_vals, line_width=2)
+    show(fig) 
+```
+
+# Algoritmos de optimización
+Los algoritmos de optimización nos permiten encontrar las mejores opciones para algun problema, cual es el vuelo mas barato, la ruta con menos tráfico, etc.
+
+Los algoritmos de optimización se pueden reducir a algoritmos p vs np (polinominiales vs no poliniominales)
+
+## El problema del morral (0-1 knapsack)
+Dado una mochila que tiene un limite de pesos y un monton de objetos con diferentes pesos y valor que no se pueden dividir, cual es la mejor combinación de objetos que podemos llevar en la mochila para obtener el mayor valor.
+
+```py
+def morral(available_space, weights, values, n):
+    if n == 0 or available_space == 0:
+        return 0
+    
+    current_index = n - 1
+
+    if weights[current_index] > available_space:
+        return morral(available_space, weights, values, n - 1)
+
+    return max(
+        values[current_index] + morral(available_space - weights[current_index], weights, values, n - 1),
+        morral(available_space, weights, values, n - 1)
+    )
+
+    
+
+if __name__ == '__main__': 
+    valores = [60, 100, 120, 480, 230, 50, 900]
+    pesos = [10, 20, 30, 20, 30, 40, 60]
+    tamano_morral = 60
+    n = len(valores)
+
+    resultado = morral(tamano_morral, pesos, valores, n)
+    print(resultado)
+```
+
+## Recursividad pensando en frames
+Cada vez que hacemos una nueva llamada recursiva estamos creando un frame, nos vamos acercando al caso base y cuando le damos hit a ese caso base vamos de regreso.
+
+# Ambientes Virtuales
 
 Nos permiten aislar las herramientas y configuraciones de un proyecto de python para no afectar la instalación global.
 
